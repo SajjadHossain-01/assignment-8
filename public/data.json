@@ -1,0 +1,274 @@
+[
+    {
+        "product_id": "10001",
+        "product_title": "Dell XPS 13 Laptop",
+        "product_image": "https://i.ibb.co.com/rwTmCRj/download.jpg",
+        "category": "Laptops",
+        "price": 999.99,
+        "description": "The Dell XPS 13 is a sleek and powerful laptop with a 13.4-inch display, 11th Gen Intel i7 processor, and up to 16GB RAM. Ideal for professionals and students alike.",
+        "Specification": [
+            "Processor: Intel i7 11th Gen",
+            "Display: 13.4-inch FHD+",
+            "RAM: 16GB",
+            "Storage: 512GB SSD"
+        ],
+        "availability": true,
+        "rating":    2
+    },
+    {
+        "product_id": "10002",
+        "product_title": "MacBook Air M2",
+        "product_image": "https://i.ibb.co.com/f8ZMJXW/th.jpg",
+        "category": "Laptops",
+        "price": 1199.99,
+        "description": "The new MacBook Air with M2 chip is ultra-portable, with 8GB of RAM and 256GB of storage. Perfect for everyday use and light editing tasks.",
+        "Specification": [
+            "Processor: Apple M2 Chip",
+            "Display: 13.6-inch Retina",
+            "RAM: 8GB",
+            "Storage: 256GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "20001",
+        "product_title": "iPhone 15 Pro Max",
+        "product_image": "https://i.ibb.co.com/VQK1gPH/OIP.jpg",
+        "category": "Phones",
+        "price": 1099.99,
+        "description": "The iPhone 15 Pro Max offers top-tier performance with a 48MP camera, A17 Bionic chip, and a stunning 6.7-inch OLED display.",
+        "Specification": [
+            "Processor: A17 Bionic Chip",
+            "Camera: 48MP Triple Camera System",
+            "Display: 6.7-inch Super Retina XDR OLED",
+            "Battery Life: Up to 28 hours"
+        ],
+        "availability": true,
+        "rating": 5
+    },
+    {
+        "product_id": "20002",
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://i.ibb.co.com/L8jN7p1/Samsung-Galaxy-S24-FE-Blue-300x300.webp",
+        "category": "Phones",
+        "price": 1199.99,
+        "description": "The Samsung Galaxy S23 Ultra features a 200MP camera, Snapdragon 8 Gen 2, and a 6.8-inch Dynamic AMOLED display.",
+        "Specification": [
+            "Processor: Snapdragon 8 Gen 2",
+            "Camera: 200MP Quad Camera System",
+            "Display: 6.8-inch Dynamic AMOLED 2X",
+            "Battery Life: 24 hours"
+        ],
+        "availability": true,
+        "rating": 4
+    },
+    {
+        "product_id": "20003",
+        "product_title": "OnePlus 11 5G",
+        "product_image": "https://i.ibb.co.com/rGNzzXr/OIP.jpg",
+        "category": "Phones",
+        "price": 749.99,
+        "description": "The OnePlus 11 5G is powered by Snapdragon 8 Gen 2, 16GB RAM, and a 50MP triple camera system, offering a smooth experience and powerful performance.",
+        "Specification": [
+            "Processor: Snapdragon 8 Gen 2",
+            "Camera: 50MP Triple Camera System",
+            "Display: 6.7-inch AMOLED",
+            "Battery Life: 25 hours"
+        ],
+        "availability": false,
+        "rating": 3.5
+    },
+    {
+        "product_id": "30001",
+        "product_title": "Wireless Mouse & Keyboard Combo",
+        "product_image": "https://i.ibb.co.com/nzvs3bn/OIP.jpg",
+        "category": "Accessories",
+        "price": 39.99,
+        "description": "This wireless mouse and keyboard combo offers ergonomic design, long-lasting battery life, and easy connectivity for both work and home use.",
+        "Specification": [
+            "Type: Wireless",
+            "Compatibility: Windows, macOS",
+            "Battery Life: Up to 12 months",
+            "Color: Black"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": "30002",
+        "product_title": "Noise Cancelling Bluetooth Headphones",
+        "product_image": "https://i.ibb.co.com/w7vSvQG/OIP.jpg",
+        "category": "Accessories",
+        "price": 129.99,
+        "description": "Enjoy premium sound quality and active noise cancellation with these wireless Bluetooth headphones. Perfect for travel or work.",
+        "Specification": [
+            "Noise Cancellation: Active",
+            "Bluetooth Version: 5.0",
+            "Battery Life: 20 hours",
+            "Color: Silver"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "30003",
+        "product_title": "Portable Power Bank 20000mAh",
+        "product_image": "https://i.ibb.co.com/DwSCCp3/OIP.jpg",
+        "category": "Accessories",
+        "price": 39.99,
+        "description": "Keep your devices charged on the go with this 20000mAh portable power bank. It includes multiple USB ports for charging different devices simultaneously.",
+        "Specification": [
+            "Capacity: 20000mAh",
+            "USB Ports: 3",
+            "Input: Type-C, Micro USB",
+            "Output: USB-A"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "40001",
+        "product_title": "Fitbit Sense 2 Smartwatch",
+        "product_image": "https://i.ibb.co.com/jLN017x/download.jpg",
+        "category": "Smart Watches",
+        "price": 249.99,
+        "description": "The Fitbit Sense 2 offers advanced health features like ECG, stress management, sleep tracking, and built-in GPS. Stay on top of your fitness goals.",
+        "Specification": [
+            "Display: AMOLED",
+            "Sensors: ECG, EDA, Heart Rate",
+            "Battery Life: 6+ days",
+            "GPS: Built-in"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "40002",
+        "product_title": "Apple Watch Series 8",
+        "product_image": "https://i.ibb.co.com/pyFSX7Z/OIP.jpg",
+        "category": "Smart Watches",
+        "price": 399.99,
+        "description": "The Apple Watch Series 8 offers fitness tracking, ECG, and heart rate monitoring with a sleek design and multiple color options.",
+        "Specification": [
+            "Display: Retina OLED",
+            "Sensors: ECG, Blood Oxygen, Heart Rate",
+            "Battery Life: 18 hours",
+            "GPS: Built-in"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "40003",
+        "product_title": "Garmin Venu 2 Plus Smartwatch",
+        "product_image": "https://i.ibb.co.com/cTqp7Tn/OIP.jpg",
+        "category": "Smart Watches",
+        "price": 349.99,
+        "description": "Garmin Venu 2 Plus combines fitness tracking, GPS, and smart notifications in a stylish, durable package.",
+        "Specification": [
+            "Display: AMOLED",
+            "Sensors: Heart Rate, GPS, Pulse Ox",
+            "Battery Life: 9 days",
+            "Water Resistance: 5 ATM"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "50001",
+        "product_title": "Sony WH-1000XM5 Wireless Headphones",
+        "product_image": "https://i.ibb.co.com/qF0S8gh/download.jpg",
+        "category": "Accessories",
+        "price": 349.99,
+        "description": "The Sony WH-1000XM5 offers industry-leading noise cancellation, high-quality sound, and up to 30 hours of battery life.",
+        "Specification": [
+            "Noise Cancellation: Adaptive",
+            "Bluetooth Version: 5.2",
+            "Battery Life: 30 hours",
+            "Color: Black"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "50002",
+        "product_title": "Ninja Foodi 8-in-1 Pressure Cooker",
+        "product_image": "https://i.ibb.co.com/tbVjws7/download.jpg",
+        "category": "Accessories",
+        "price": 169.99,
+        "description": "The Ninja Foodi is an 8-in-1 pressure cooker with air frying capabilities. A versatile kitchen appliance for fast, healthy meals.",
+        "Specification": [
+            "Type: Multi-Cooker",
+            "Functions: Air Fry, Pressure Cook, Bake",
+            "Capacity: 6 Quarts",
+            "Power: 1400 Watts"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "30004",
+        "product_title": "RGB Mechanical Gaming Keyboard",
+        "product_image": "https://i.ibb.co.com/Qv8z3rj/download.jpg",
+        "category": "Accessories",
+        "price": 99.99,
+        "description": "Enhance your gaming experience with this RGB mechanical keyboard featuring customizable keys and 16.8 million colors.",
+        "Specification": [
+            "Type: Mechanical",
+            "Switch Type: Cherry MX",
+            "RGB Lighting: Yes",
+            "Compatibility: Windows"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": "20004",
+        "product_title": "Google Pixel 8",
+        "product_image": "https://i.ibb.co.com/CW08MZN/download.jpg",
+        "category": "Phones",
+        "price": 699.99,
+        "description": "The Google Pixel 8 offers a clean Android experience, AI-powered photography, and a 6.2-inch OLED display for vibrant visuals.",
+        "Specification": [
+            "Processor: Google Tensor G3",
+            "Camera: 50MP Dual Camera",
+            "Display: 6.2-inch OLED",
+            "Battery Life: Up to 24 hours"
+        ],
+        "availability": true,
+        "rating": 3.7
+    },
+    {
+        "product_id": "10003",
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/VWkXdjP/download.jpg",
+        "category": "Laptops",
+        "price": 1399.99,
+        "description": "The HP Spectre x360 2-in-1 laptop offers a stunning 4K OLED display and 16GB RAM for a smooth, powerful experience.",
+        "Specification": [
+            "Processor: Intel Core i7",
+            "Display: 13.3-inch 4K OLED",
+            "RAM: 16GB",
+            "Storage: 512GB SSD"
+        ],
+        "availability": true,
+        "rating": 2.8
+    },
+    {
+        "product_id": "20005",
+        "product_title": "Xiaomi Mi 13 Pro",
+        "product_image": "https://i.ibb.co.com/kgqKnkY/download.jpg",
+        "category": "Phones",
+        "price": 899.99,
+        "description": "The Xiaomi Mi 13 Pro delivers high-end specs with a 50MP camera, Snapdragon 8 Gen 2, and a large 6.73-inch AMOLED display.",
+        "Specification": [
+            "Processor: Snapdragon 8 Gen 2",
+            "Camera: 50MP Triple Camera",
+            "Display: 6.73-inch AMOLED",
+            "Battery Life: 22 hours"
+        ],
+        "availability": true,
+        "rating": 1.6
+    }
+]
