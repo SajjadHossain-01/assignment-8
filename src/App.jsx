@@ -7,7 +7,7 @@ export const ProductsData = createContext("product");
 export const AddedProduct = createContext("added");
 export const AddedProductWishlist = createContext("added");
 export const CartList = createContext("cart");
-export const Wishlist = createContext("wishlist");
+export const Wishlists = createContext("wishlist");
 function App() {
   const [product, setProduct] = useState([]);
   const [productWish, setProductWish] = useState([]);
@@ -17,26 +17,26 @@ function App() {
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
-  const handleAddedProduct = (id) => {
-    setAddedProduct([...addedProduct, id]);
-  };
-  const handleAddedProductWishlist = (id) => {
-    setProductWish([...productWish, id]);
-  };
+  // const handleAddedProduct = (id) => {
+  //   setAddedProduct([...addedProduct, id]);
+  // };
+  // const handleAddedProductWishlist = (id) => {
+  //   setProductWish([...productWish, id]);
+  // };
   return (
     <>
       <ProductsData.Provider value={product}>
-        <AddedProduct.Provider value={handleAddedProduct}>
-          <AddedProductWishlist.Provider value={handleAddedProductWishlist}>
+        <AddedProduct.Provider value={setAddedProduct}>
+          <AddedProductWishlist.Provider value={setProductWish}>
             <CartList.Provider value={addedProduct}>
-              <Wishlist.Provider value={productWish}>
+              <Wishlists.Provider value={productWish}>
                 <Nav
                   addedProduct={addedProduct}
                   productWish={productWish}
                 ></Nav>
                 <Outlet></Outlet>
                 <Footer></Footer>
-              </Wishlist.Provider>
+              </Wishlists.Provider>
             </CartList.Provider>
           </AddedProductWishlist.Provider>
         </AddedProduct.Provider>

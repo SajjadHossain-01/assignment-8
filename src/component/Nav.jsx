@@ -47,22 +47,22 @@ const Nav = ({ addedProduct, productWish }) => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li>{Navlink1}</li>
+              <li className="sora-font">{Navlink1}</li>
 
               <li>{Navlink2}</li>
               <li>{Navlink3}</li>
             </ul>
           </div>
-          <a className="btn btn-ghost lg:text-3xl text-xl font-bold">
+          <a className="btn btn-ghost lg:text-2xl text-xl font-bold sora-font">
             Gadget Haven
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li className=" text-xl font-semibold">{Navlink1}</li>
+            <li className=" text-xl font-semibold sora-font2">{Navlink1}</li>
 
-            <li className=" text-xl font-semibold">{Navlink2}</li>
-            <li className=" text-xl font-semibold">{Navlink3}</li>
+            <li className=" text-xl  sora-font2">{Navlink2}</li>
+            <li className=" text-xl  sora-font2">{Navlink3}</li>
           </ul>
         </div>
         <div className="navbar-end ">
@@ -73,7 +73,7 @@ const Nav = ({ addedProduct, productWish }) => {
             >
               <AiOutlineShoppingCart />
             </Link>
-            <span className="badge badge-sm indicator-item">
+            <span className="badge badge-sm bg-none indicator-item">
               {addedProduct.length}
             </span>
           </div>

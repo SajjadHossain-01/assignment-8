@@ -21,44 +21,44 @@ const Products = () => {
   };
 
   return (
-    <div className=" container m-auto">
-      <h1 className="lg:text-6xl text-3xl font-bold my-7 text-center">
+    <div className=" container m-auto mb-[100px]">
+      <h1 className="lg:text-4xl text-3xl font-bold mt-[100px] mb-12 text-center sora-font">
         Explore Cutting-Edge Gadgets
       </h1>
-      <div className="flex lg:flex-row flex-col lg:items-start gap-3 items-center justify-between ">
-        <div className="w-[240px] flex flex-col gap-2">
+      <div className="flex lg:flex-row flex-col lg:items-start items-center  gap-6  ">
+        <div className="min-w-[240px] flex flex-col gap-6 bg-white p-6 rounded-2xl">
           <button
             onClick={() => handleProductDisplay("")}
-            className="btn btn-primary rounded-4xl"
+            className=" bg-[#9538E2] text-white sora-font2 font-extrabold text-xl text-start pl-5 rounded-4xl py-3"
           >
             All Product
           </button>
           <button
             onClick={() => handleProductDisplay("Laptops")}
-            className="btn btn-primary rounded-4xl"
+            className="bg-[#9538E2] text-white sora-font2 font-extrabold text-xl text-start pl-5 rounded-4xl py-3"
           >
             Laptops
           </button>
           <button
             onClick={() => handleProductDisplay("Phones")}
-            className="btn btn-primary rounded-4xl"
+            className="bg-[#9538E2] text-white sora-font2 font-extrabold text-xl text-start pl-5 rounded-4xl py-3"
           >
             Phones
           </button>
           <button
             onClick={() => handleProductDisplay("Accessories")}
-            className="btn btn-primary rounded-4xl"
+            className="bg-[#9538E2] text-white sora-font2 font-extrabold text-xl text-start pl-5 rounded-4xl py-3"
           >
             Accessories
           </button>
           <button
             onClick={() => handleProductDisplay("Smart Watches")}
-            className="btn btn-primary rounded-4xl"
+            className="bg-[#9538E2] text-white sora-font2 font-extrabold text-xl text-start pl-5 rounded-4xl py-3"
           >
             Smart Watches
           </button>
         </div>
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
           {productData.map((product, index) => (
             <Product key={index} product={product}></Product>
           ))}

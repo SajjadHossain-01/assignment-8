@@ -4,9 +4,9 @@ const Modal = ({ isVisible, setIsVisible }) => {
   if (!isVisible) return null;
   return (
     <div className="fixed inset-0 bg-[#00000040]   flex justify-center items-center">
-      <div className=" bg-white p-6 rounded-2xl flex flex-col items-center gap-3">
+      <div className=" bg-white p-6 rounded-2xl flex flex-col items-center gap-7">
        <div><img src={sucsess} alt="" /></div>
-        <h1 className="text-5xl">Payment sucsess</h1>
+        <h1 className="text-5xl sora-font2">Payment sucsess</h1>
         <button onClick={() => setIsVisible()} className="btn text-xl ">
           close
         </button>
