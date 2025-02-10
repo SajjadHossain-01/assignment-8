@@ -7,7 +7,7 @@ import propTypes from "prop-types";
 import PropTypes from "prop-types";
 
 const Nav = ({ addedProduct, productWish }) => {
-  const [isActive, setIsActive] = useState();
+  const [isPressed, setIsActive] = useState();
 
   const Navlink1 = (
     <NavLink
@@ -22,7 +22,7 @@ const Nav = ({ addedProduct, productWish }) => {
   const Navlink2 = <NavLink to={"/dashboard"}>Dashboard</NavLink>;
   const Navlink3 = <NavLink to={"/Statistics"}>Statistics</NavLink>;
   return (
-    <div className={`lg:w-7xl m-auto ${isActive && "text-white mt-7"} `}>
+    <div className={`lg:w-7xl m-auto ${isPressed && "text-white mt-7"} `}>
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -53,9 +53,9 @@ const Nav = ({ addedProduct, productWish }) => {
               <li>{Navlink3}</li>
             </ul>
           </div>
-          <a className="btn btn-ghost lg:text-2xl text-xl font-bold sora-font">
+          <Link to={"/"} className="btn btn-ghost lg:text-2xl text-xl font-bold sora-font">
             Gadget Haven
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

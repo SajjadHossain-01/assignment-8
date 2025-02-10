@@ -1,32 +1,53 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Modal from "./Modal";
 import { AddedProduct, CartList } from "../App";
 import CartProduct from "./CartProduct";
 import { FaArrowDownUpAcrossLine } from "react-icons/fa6";
 const Cart = () => {
-  const removedProduct =useContext(AddedProduct)
+  const [isVisible, setIsVisible] = useState();
+  const [totalPrice, setTotalPrice] = useState(0);
+  const removedProduct = useContext(AddedProduct);
   const cartlistProduct = useContext(CartList);
+  useEffect(() => {
+    const fristProdust = cartlistProduct.map(
+      (productPrice) => productPrice.price
+    );
+  
+    let sum = 0;
+    for (let i = 0; i < fristProdust.length; i++) {
+      sum += fristProdust[i];
+    }
+setTotalPrice(sum)
+    console.log(sum);
+
+    console.log(fristProdust);
+  }, []);
   const handleRemoveFromCart = (productid) => {
     const removeFromCart = cartlistProduct.filter(
       (product) => product.product_id !== productid
     );
-    removedProduct(removeFromCart)
+    removedProduct(removeFromCart);
     console.log(removeFromCart);
   };
-  const handleShorBy =()=>{
-   const shortedProduct= [...cartlistProduct].sort((a,b)=>a.price- b.price);
-   removedProduct(shortedProduct)
-  }
-  console.log(cartlistProduct);
+  const handleShorBy = () => {
+    const shortedProduct = [...cartlistProduct].sort(
+      (a, b) => a.price - b.price
+    );
+    removedProduct(shortedProduct);
+  };
 
-  const [isVisible, setIsVisible] = useState();
   return (
     <div className="mt-10 lg:w-7xl m-auto ">
       <div className="flex flex-col lg:flex-row gap-3 justify-between items-center">
         <h1 className="sora-font text-2xl">Cart</h1>
         <div className="flex flex-col lg:flex-row items-center gap-5">
-          <h1 className="text-2xl sora-font ">Total Cost : $</h1>
-          <button onClick={handleShorBy} className="flex items-center gap-2 px-6 py-3 border-[#9538E2] text-[#9538E2] border-2 sora-font text-xl rounded-4xl">
+          <h1 className="text-2xl sora-font ">
+            Total Cost : $ <span>{totalPrice}</span>
+          </h1>
+          <button
+            onClick={handleShorBy}
+            className="flex items-center gap-2 px-6 py-3 border-[#9538E2] text-[#9538E2] border-2 sora-font text-xl rounded-4xl"
+          >
             short by price <FaArrowDownUpAcrossLine />
           </button>
           <button
